@@ -2,12 +2,14 @@
 
 A lightweight, multi-site blog publisher with a rich text editor. Runs locally in your browser — no extra dependencies beyond Python 3.
 
+![Blog Publisher](screenshot.svg)
+
 ## Features
 
 - 📝 WYSIWYG rich text editor (bold, italic, headings, lists, code blocks)
 - 📷 Insert images — drag & drop or file picker, auto-extracted to static assets
 - 🌐 Multi-site support — auto-detects Next.js website projects in your workspace
-- 🚀 One-click publish — saves, builds, commits, and pushes to deploy
+- 🚀 One-click publish — saves, builds, commits, and pushes to deploy via Vercel
 - 💾 Save drafts without publishing
 - 📂 Load and edit existing posts
 
@@ -17,7 +19,7 @@ A lightweight, multi-site blog publisher with a rich text editor. Runs locally i
 2. Opens a rich text editor in your browser at `http://localhost:4444`
 3. Select which site to publish to
 4. Write your post with formatting and images
-5. Click Publish → builds, commits, pushes → Vercel auto-deploys
+5. Click **Publish** → builds, commits, pushes → Vercel auto-deploys
 
 ## Requirements
 
@@ -42,7 +44,7 @@ The publisher auto-detects websites by scanning the parent directory for folders
 - `next.config.ts` (or `.js`/`.mjs`) — confirms it's a Next.js project
 - `content/blog/` directory — confirms it has a blog
 
-## Project Structure Expected
+## Project Structure
 
 ```
 your-workspace/
@@ -55,7 +57,3 @@ your-workspace/
 │   └── content/blog/
 └── some-other-project/      ← ignored (no blog)
 ```
-
-## License
-
-MIT
